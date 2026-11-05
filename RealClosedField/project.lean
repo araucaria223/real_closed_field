@@ -11,11 +11,12 @@ theorem closure_emb_ext_unordered
     [FiniteDimensional F K] [IsOrderedModule F K] :
     Nonempty (K →ₐ[F] R) := by
   sorry
-
+-- change to explicit
+-- prove nonempty later if need, define 
 
 -- corollary 39: A real closed field has no nontrivial field automorphisms.
 
 theorem RCF_no_auto
-    {R : Type*} [Field R] [IsRealClosed R] (σ : R ≃+* R) :
-    σ = RingEquiv.refl R := by
+    {R : Type*} [Field R] [IsRealClosed R] (f : R ≃+* R) :
+    f = RingEquiv.refl R := by
   sorry
